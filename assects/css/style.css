@@ -159,6 +159,7 @@ header {
 
     .mobile-menu .login-button button a{
         width: 100%;
+        text-align: center;
     }
 
     .open {
