@@ -5,7 +5,7 @@
 
 [Marcelle Neves Sandy](https://github.com/marcellenevessandy)
 
-[Link da página](https://landingpage-macellesandy.vercel.app/)
+[Link da página](https://landingpage-marcellesandy.vercel.app/)
 
 
 ## Índice
