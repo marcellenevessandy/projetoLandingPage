@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assects/css/style.css">
+    <link rel="shortcut icon" href="./assects/img/cabide-icon.png" type="image/x-icon">
+    <title>Mood</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assects/img/cabide.png" alt="logo cabide"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#slide" class="nav-link">Promoções</a></li>
+                    <li class="nav-item"><a href="#novidades" class="nav-link">Novidades</a></li>
+                    <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#contagem" class="nav-link">Inauguração</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#contato">Contato</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assects/img/menu.png" alt="logo menu"></button>
+            </div>
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#slide" class="nav-link">Promoções</a></li>
+                <li class="nav-item"><a href="#novidades" class="nav-link">Novidades</a></li>
+                <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#contagem" class="nav-link">Inauguração</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#contato">Contato</a></button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="slider" id="slide">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./assects/img/casacos.d.png" alt="slide 1">
+                    <img class="img-mobile" src="./assects/img/casacos.m.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assects/img/etiqueta.d.png" alt="slide 3">
+                    <img class="img-mobile" src="./assects/img/etiqueta.m.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assects/img/saltos.d.png" alt="slide 3">
+                    <img class="img-mobile" src="./assects/img/saltos.m.png" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="cards">
+            <div class="card">
+                <img src="./assects/img/card1.png" alt="Produto 1">
+                <h1>Blazer Elegance</h1>
+                <span>R$ 119,99</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./assects/img/card2.png" alt="Produto 2">
+                <h1>Blazer Mood</h1>
+                <span>R$ 159,99</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./assects/img/card3.png" alt="Produto 3">
+                <h1>Blazer Elite</h1>
+                <span>R$ 109,99</span>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section id="novidades" class="container">
+            <div class="container-formulario">
+                <h1>Assine para Receber Novidades</h1>
+                <div class="formulario">
+                    <form action="https://formsubmit.co/marcellesandy3@gmail.com" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <button type="submit">Assinar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contagem" class="container-contagem">
+            <div class="contagem">
+                <h1>Contagem Regressiva para a Inauguração da Loja</h1>
+                <div id="countdown"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <footer class="footer">
+            <div class="redes-sociais">
+                <a href="#" target="_blank">
+                    <img src="./assects/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            
+            <div>
+                <p>&copy; Todos os direitos reservados. Desenvolvido por Marcelle Sandy</p>
+            </div>
+        </footer>
+
+    </footer>
+
+    <script src="assects/js/script.js"></script>
+</body>
+
+</html>
