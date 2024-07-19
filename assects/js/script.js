@@ -56,7 +56,7 @@ function proximaImg(){
 }
 
 //contagem
-const inaugurationDate = new Date(2024, 6, 18, 19, 0, 0); // 18 de julho de 2024 às 19:00
+const inaugurationDate = new Date(2024, 6, 18, 22, 0, 0); // 18 de julho de 2024 às 19:00
 
 function updateCountdown() {
     const now = new Date().getTime();
