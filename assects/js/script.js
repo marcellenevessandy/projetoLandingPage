@@ -54,28 +54,3 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
-
-//contagem
-const inaugurationDate = new Date(2025, 6, 18, 22, 0, 0); // 18 de julho de 2024 às 19:00
-
-function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = inaugurationDate - now;
-
-    if (distance < 0) {
-        document.getElementById('countdown').innerHTML = 'Nossa loja está oficialmente inaugurada!🎉';
-        clearInterval(timerInterval);
-        return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}
-
-updateCountdown();
-
-const timerInterval = setInterval(updateCountdown, 1000);
